@@ -1,25 +1,43 @@
 {
   "expo": {
-    "name": "timer",
+    "name": "Exercise Timer",
     "slug": "timer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "exercisetimer",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0f172a",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.exercisetimer.app"
     },
     "android": {
+      "package": "com.exercisetimer.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
+        "backgroundColor": "#0f172a",
+        "foregroundImage": "./assets/adaptive-foreground.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "name": "Exercise Timer",
+      "themeColor": "#0f172a",
+      "backgroundColor": "#0f172a",
+      "display": "standalone"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "92fc5a74-2a57-4758-aed8-69c92918a91c"
+      }
+    },
+    "owner": "sukake-team"
   }
 }
