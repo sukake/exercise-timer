@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from '../ui';
+import { Button, Logo } from '../ui';
 import { colors, radius, spacing } from '../theme';
 
 const STEPS: { icon: string; title: string; body: string }[] = [
@@ -35,9 +35,9 @@ export function IntroScreen({
 }) {
   return (
     <View style={styles.wrap}>
-      <Text style={styles.emoji}>💪</Text>
+      <Logo size={88} style={styles.logo} />
       <Text style={styles.title}>{firstTime ? 'Welcome!' : 'How it works'}</Text>
-      <Text style={styles.subtitle}>Your interval workout timer in four steps.</Text>
+      <Text style={styles.subtitle}>Your exercise workout timer in four steps.</Text>
 
       <View style={styles.steps}>
         {STEPS.map((s, i) => (
@@ -65,7 +65,7 @@ export function IntroScreen({
 
 const styles = StyleSheet.create({
   wrap: { width: '100%', maxWidth: 460, gap: spacing.md, alignItems: 'center' },
-  emoji: { fontSize: 52 },
+  logo: { marginBottom: spacing.xs },
   title: { color: colors.text, fontSize: 28, fontWeight: '800' },
   subtitle: {
     color: colors.textMuted,

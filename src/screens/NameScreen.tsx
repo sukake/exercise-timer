@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { Button } from '../ui';
+import { Button, Logo } from '../ui';
 import { colors, radius, spacing } from '../theme';
 import { NAME_MAX_LENGTH } from '../types';
 
@@ -16,7 +16,7 @@ export function NameScreen({
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.emoji}>💪</Text>
+      <Logo size={96} style={styles.logo} />
       <Text style={styles.title}>Exercise Timer</Text>
       <Text style={styles.subtitle}>What should we call you?</Text>
       <TextInput
@@ -44,7 +44,7 @@ export function NameScreen({
 
 const styles = StyleSheet.create({
   wrap: { width: '100%', maxWidth: 420, gap: spacing.md, alignItems: 'center' },
-  emoji: { fontSize: 56 },
+  logo: { marginBottom: spacing.xs },
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textMuted, fontSize: 16, marginBottom: spacing.sm },
   input: {

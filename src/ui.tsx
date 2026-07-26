@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
+  Image,
+  ImageStyle,
   Pressable,
   StyleSheet,
   Text,
@@ -8,6 +10,20 @@ import {
   ViewStyle,
 } from "react-native";
 import { colors, radius, spacing } from "./theme";
+
+// App wordmark/logo — the stopwatch + flexed-arm mark on a transparent square,
+// so it sits cleanly on the dark background or cards.
+export function Logo({ size = 72, style }: { size?: number; style?: ImageStyle }) {
+  return (
+    <Image
+      source={require("../assets/logo-mark.png")}
+      style={[{ width: size, height: size }, style]}
+      resizeMode="contain"
+      accessibilityRole="image"
+      accessibilityLabel="Exercise Timer logo"
+    />
+  );
+}
 
 export function Button({
   label,

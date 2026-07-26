@@ -1,6 +1,6 @@
 # Exercise Timer 💪
 
-A simple, cross-platform interval workout timer. Set your laps, exercise
+A simple, cross-platform exercise workout timer. Set your laps, exercise
 duration, and rest gap — then follow the countdown with audio cues. One
 codebase runs on **iOS, Android, Web, and Desktop** (Expo + React Native).
 

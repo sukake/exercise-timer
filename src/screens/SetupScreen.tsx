@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button, Card, NumberField, SegmentedToggle } from '../ui';
+import { Button, Card, Logo, NumberField, SegmentedToggle } from '../ui';
 import { colors, spacing } from '../theme';
 import { LIMITS, WorkoutSettings } from '../types';
 
@@ -37,6 +37,7 @@ export function SetupScreen({
 
   return (
     <View style={styles.wrap}>
+      <Logo size={56} />
       <Text style={styles.hi}>Hi {name} 👋</Text>
       <Text style={styles.title}>Set up your workout</Text>
       <Card>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Pressable, StyleSheet, Text, View } from "react-native";
-import { Button, Card } from "../ui";
+import { Button, Card, Logo } from "../ui";
 import { colors, radius, spacing } from "../theme";
 import { WorkoutSettings } from "../types";
 
@@ -25,6 +25,7 @@ export function ReadyScreen({
 
   return (
     <View style={styles.wrap}>
+      <Logo size={64} />
       {justCompleted && (
         <View style={styles.banner}>
           <Text style={styles.bannerText}>

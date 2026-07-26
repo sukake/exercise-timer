@@ -1,7 +1,7 @@
 {
   "name": "Exercise Timer",
   "short_name": "Timer",
-  "description": "Simple interval workout timer with laps, rest gaps, and audio cues.",
+  "description": "Simple exercise workout timer with laps, rest gaps, and audio cues.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
